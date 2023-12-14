@@ -1,0 +1,16 @@
+{
+  "name": "your_creative_partner",
+  "version": "0.0.1",
+  "description": "Test task by Eugene Kokaiko (The Frontend Company)",
+  "main": "",
+  "scripts": {
+      "sass:compile": "node-sass src/scss/main.scss -o src/css",
+      "sass:watch": "npm run sass:compile && node-sass src/scss/main.scss -o src/css --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^9.0.0"
+  }
+}
