@@ -12,6 +12,7 @@
     <meta name="robots" content="index, follow">
     <meta charset="UTF-8">
     <title>At T Palmer Agency - Your Creative Partner</title>
+    <link rel="stylesheet" href="./src/fonts/Inter/inter.css">
     <link rel="stylesheet" href="./src/fonts/Lato/lato.css">
     <link rel="stylesheet" href="./src/fonts/AmsterdamHandwrite/style.css">
     <link rel="stylesheet" href="./src/css/normalize.css">
@@ -20,31 +21,82 @@
 <body>
     <div class="container">
         <header class="header">
-            <div class="header__logo">
-                <a href="">SERVICES</a>
-                <a href="">YOUR TEAM</a>
-                <a href="">OUR WORK</a>
-                <a href="">BLOG</a>
-                <a href="">Let's partner up</a>
+            <div class="header__inner">
+                <div class="header__logo lato16White600">
+                    <img src="./src/assets/svg/logo.svg" alt="">
+                </div>
+                <div class="header__links">
+                    <a class="normalize-links primary-button" href="">Let's partner up</a>
+                    <div class="header-links__burger">
+                        <div class="header-links-burger__button">
+                            <div class="header-links-burger-button__path"></div>
+                            <div class="header-links-burger-button__path"></div>
+                            <div class="header-links-burger-button__path"></div>
+                        </div>
+                        <nav style="display: none">
+                            <a class="normalize-links lato160White600" href="">SERVICES</a>
+                            <a class="normalize-links" href="">YOUR TEAM</a>
+                            <a class="normalize-links" href="">OUR WORK</a>
+                            <a class="normalize-links" href="">BLOG</a>
+                        </nav>
+                    </div>
+                    <style>
+                        #nav-icon * {
+                            transition: all 0.5s;
+                        }
+                        #nav-icon.open .tfc-header-nav-icon__clip:nth-child(1) {
+                            -webkit-transform: rotate(45deg) translate(3px, 3px);
+                            -moz-transform: rotate(45deg) translate(3px, 3px);
+                            -o-transform: rotate(45deg) translate(3px, 3px);
+                            transform: rotate(45deg) translate(3px, 3px);
+                        }
+                        #nav-icon.open .tfc-header-nav-icon__clip:nth-child(2) {
+                            -webkit-transform: rotate(-45deg) translate(3px, -3px);
+                            -moz-transform: rotate(-45deg) translate(3px, -3px);
+                            -o-transform: rotate(-45deg) translate(3px, -3px);
+                            transform: rotate(-45deg) translate(3px, -3px);
+                        }
+                        .tfc-header__content-burger {
+                            z-index: 97;
+                            background-color: #fff;
+                            transition: 0.5s;
+                        }
+
+                        #nav-icon.open .tfc-header__content-burger {
+                            top: 72px !important;
+                        }
+                    </style>
+                    <script>
+                        const element = document.querySelector("#nav-icon");
+                        element.addEventListener("click", () => {
+                            element.classList.toggle("open");
+                            const contentBlock = document.querySelector(".tfc-header__content-burger");
+                            const isOpened = element.classList.contains("open");
+                            if (isOpened) {
+                                contentBlock.style.setProperty("top", "72px", "important");
+                            } else {
+                                contentBlock.style.setProperty("top", "-100vh", "important");
+                            }
+                        })
+
+                    </script>
+                </div>
             </div>
         </header>
         <main class="content">
             <section class="section first-section">
-                <div class="section__shrink-container">
-                    <div>
-                        <p><span>Your</span>Creative \n     Partner</p>
-                    </div>
-                    <div>
-                        <div>PALKA</div>
-                        <span>Lorem ipsum dolor sit amet, consectetur \n adipiscing elit, sed do eiusmod tempor.</span>
+                <div class="first-section__mask">
+                    <div class="section__shrink-container">
+                        <p class="inter100White500">Experience solutions.</p>
+                        <div class="inter100Secondaty500">
+                            <span class="amsterdam100Secondary400">Beyond</span> Branding
+                        </div>
                     </div>
                 </div>
             </section>
             <section class="section second-section">
-                <div class="section__shrink-container">
-                    <h3>We believe that every event is a unique story waiting to be told.</h3>
-                    <img src="" alt="IMAGE_WOMAN_1">
-                </div>
+                <h3 class="second-section__heading inter48White600 align-center">We believe that every event is a unique story waiting to be told.</h3>
+                <img class="second-section__illustration" src="./src/assets/png/1.png" alt="IMAGE_WOMAN_1">
             </section>
             <section class="section third-section">
                 <h2>About Us</h2>

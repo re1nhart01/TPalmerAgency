@@ -1,0 +1,27 @@
+/* Text styles with colors */
+
+.lato160White600 {
+  @extend .lato16_600;
+  color: $white;
+}
+
+
+.inter100White500 {
+  @extend .inter100_500;
+  color: $white;
+}
+
+.inter100Secondaty500 {
+  @extend .inter100_500;
+  color: $secondary;
+}
+
+.amsterdam100Secondary400 {
+  @extend .amsterdam100_400;
+  color: $secondary;
+}
+
+.inter48White600 {
+  @extend .inter48_600;
+  color: $white;
+}

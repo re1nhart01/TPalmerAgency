@@ -1,0 +1,38 @@
+/* Misc */
+.uppercase-text {
+  text-transform: uppercase; }
+
+.normalize-links {
+  text-decoration: none; }
+
+.align-center {
+  text-align: center; }
+
+/* Typo */
+.lato16_600 {
+  font-family: Lato, serif;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 140%; }
+
+.inter100_500 {
+  font-family: Inter, serif;
+  font-size: 6.25rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 100%; }
+
+.amsterdam100_400 {
+  font-family: Amsterdam Handwriting Regular, serif;
+  font-size: 6.25rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%; }
+
+.inter48_600 {
+  font-family: Inter, serif;
+  font-size: 3rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 150%; }
