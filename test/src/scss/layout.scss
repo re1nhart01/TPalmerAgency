@@ -15,3 +15,31 @@
   align-items: center;
 }
 
+@mixin flex-row-center__jc-center {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin align_self($pos) {
+  align-self: $pos;
+}
+
+@mixin normalize-flex__col {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+@mixin section-heading($isLeft: false) {
+  .section-heading {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: if($isLeft, flex-start, flex-end);
+    padding-left: 7.7%;
+    padding-right: 7.7%;
+    margin-bottom: 92px;
+  }
+}

@@ -1,11 +1,17 @@
 
 
 .primary-button {
-  display: flex;
   padding: 12px 28px;
-  justify-content: center;
-  align-items: center;
   gap: 10px;
   border-radius: 70px;
   background-color: $secondary;
+}
+
+
+.secondary-button {
+  padding: 12px 28px;
+  border: none;
+  gap: 10px;
+  border-radius: 70px;
+  background-color: $white;
 }

@@ -67,17 +67,6 @@
                         }
                     </style>
                     <script>
-                        const element = document.querySelector("#nav-icon");
-                        element.addEventListener("click", () => {
-                            element.classList.toggle("open");
-                            const contentBlock = document.querySelector(".tfc-header__content-burger");
-                            const isOpened = element.classList.contains("open");
-                            if (isOpened) {
-                                contentBlock.style.setProperty("top", "72px", "important");
-                            } else {
-                                contentBlock.style.setProperty("top", "-100vh", "important");
-                            }
-                        })
 
                     </script>
                 </div>
@@ -99,46 +88,216 @@
                 <img class="second-section__illustration" src="./src/assets/png/1.png" alt="IMAGE_WOMAN_1">
             </section>
             <section class="section third-section">
-                <h2>About Us</h2>
-                <div>
-                    <div>
+                <h2 class="third-section__heading inter100White500 ">About Us</h2>
+                <div class="third-section__content">
+                    <div class="inter32White400 third-section-content__texts">
                         <span>With our finger on the pulse of contemporary trends and a passion for innovation, we’re your go-to partners for creating unforgettable moments in today's dynamic world.</span>
                         <span>Established with the strength of being women-led, our culture thrives on diversity, community engagement, passion for creativity, and a commitment to excellence.</span>
                     </div>
-                    <div>
-                        <button>Learn More</button>
-                        <span>We are your trusted partners in bringing your event vision to life.</span>
+                    <div class="third-section-content__learn-more">
+                        <button class="secondary-button lato16Dark600 uppercase-text">Learn More</button>
+                        <span class="lato48White600 align-right break-line">
+                            We are your trusted partners in <br>
+                            bringing your event vision to life.
+                        </span>
                     </div>
                 </div>
             </section>
             <section class="section fourth-section">
-                <div class="section__shrink-container">
-                <h1>SERVICES</h1>
-                <h2>We Provide</h2>
-                <div class="fourth-section__dropdown-list">
-                    <div class="fourth-section-dropdown-list__item"></div>
-                    <div class="fourth-section-dropdown-list__item"></div>
-                    <div class="fourth-section-dropdown-list__item"></div>
-                    <div class="fourth-section-dropdown-list__item"></div>
-                    <div class="fourth-section-dropdown-list__item"></div>
-                    <div class="fourth-section-dropdown-list__item"></div>
+                <div class="section-heading">
+                    <h1 class="inter120Gradient800">SERVICES</h1>
+                    <h2 class="inter100White400">We Provide</h2>
                 </div>
+                <div class="fourth-section__accordion-list accordion-list">
+                    <div class="fourth-section-accordion-list__item accordion-list__item">
+                       <div class="fourth-section-accordion-list-item__content accordion-list-item__content">
+                           <h4 class="lato60White700">Impactful Consulting</h4>
+                           <p class="lato32White400">
+                               Optimizing brand potential through external
+                               marketing,tailored activations, industry networking,
+                               and memorable launch experiences.
+                           </p>
+                       </div>
+                        <img class="accordion-list-item__img" src="./src/assets/png/2.png" alt="ACCORDION_IMAGE_1">
+                    </div>
+                    <div class="fourth-section-accordion-list__item accordion-list__item">
+                        <div class="fourth-section-accordion-list-item__content accordion-list-item__content">
+                            <h4 class="lato60White700">Event Strategy Evolved</h4>
+                            <p class="lato32White400">
+                              Harnessing data for optimal brand positioning:
+                              meticulous coordination, strategic industry
+                              presence, brand-aligned planning, and precision-
+                              targeted marketing initiatives.
+                           </p>
+                        </div>
+                        <img class="accordion-list-item__img" src="./src/assets/png/3.png" alt="ACCORDION_IMAGE_2">
+                    </div>
+                    <div class="fourth-section-accordion-list__item accordion-list__item">
+                        <div class="fourth-section-accordion-list-item__content accordion-list-item__content">
+                            <h4 class="lato60White700">Visual & Content Storytelling</h4>
+                            <p class="lato32White400">
+                               Crafting resonant visuals and content:
+                                strategic product positioning, event promotion
+                                materials, multimedia portrayals,
+                                multi-platform brand voice amplification,
+                                and industry-focused discussions.
+                           </p>
+                        </div>
+                        <img class="accordion-list-item__img" src="./src/assets/png/4.png" alt="ACCORDION_IMAGE_3">
+                    </div>
+                    <div class="fourth-section-accordion-list__item accordion-list__item">
+                        <div class="fourth-section-accordion-list-item__content accordion-list-item__content">
+                            <h4 class="lato60White700">Narrative Excellence</h4>
+                            <p class="lato32White400">
+                               Narrating your brand's journey seamlessly:
+                               authoritative speaking roles, impactful visual aids,
+                               captivating speech outlines, and unified brand voice
+                               with presentation design.
+                           </p>
+                        </div>
+                        <img class="accordion-list-item__img" src="./src/assets/png/5.png" alt="ACCORDION_IMAGE_4">
+                    </div>
+                    <div class="fourth-section-accordion-list__item accordion-list__item">
+                        <div class="fourth-section-accordion-list-item__content accordion-list-item__content">
+                            <h4 class="lato60White700">Brand Experiences</h4>
+                            <p class="lato32White400">
+                               Crafting memorable event experiences: direct brand
+                               activations, captivating pop-ups, tailored client engagements,
+                               immersive marketing campaigns, and brand-aligned event designs.
+                           </p>
+                        </div>
+                        <img class="accordion-list-item__img" src="./src/assets/png/6.png" alt="ACCORDION_IMAGE_5">
+                    </div>
+                    <div class="fourth-section-accordion-list__item accordion-list__item">
+                        <div class="fourth-section-accordion-list-item__content accordion-list-item__content">
+                            <h4 class="lato60White700">Cultivated Connections</h4>
+                            <p class="lato32White400">
+                               Fostering brand growth through targeted consumer
+                               campaigns, strategic networking, captivating
+                               activations, and memorable promotions at events.
+                           </p>
+                        </div>
+                        <img class="accordion-list-item__img" src="./src/assets/png/7.png" alt="ACCORDION_IMAGE_6">
+                    </div>
                 </div>
+                <script defer src="src/js/accordion-handler.js"></script>
             </section>
             <section class="section fifth-section">
-                <div class="section__shrink-container">
-                <h1>Why</h1>
-                <h2> T Palmer Agency</h2>
-                <div class="fifth-section__why-columns">
-                    <div class="fifth-section__why-columns__column">
-                        <div class="fifth-section__why-columns-column__item"></div>
-                        <div class="fifth-section__why-columns-column__item"></div>
-                    </div>
-                    <div class="fifth-section__why-columns__column">
-                        <div class="fifth-section__why-columns-column__item"></div>
-                        <div class="fifth-section__why-columns-column__item"></div>
-                    </div>
+                <div class="section-heading">
+                    <h1 class="inter120Gradient800">Why</h1>
+                    <h2 class="inter100White400"> T Palmer Agency</h2>
                 </div>
+                <div class="fifth-section__why-columns">
+                        <div class="fifth-section__why-columns__column">
+                            <div class="fifth-section__why-columns-column__item">
+                                <div>
+                                    <div>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50" fill="none">
+                                            <path d="M21 0H29V50H21V0Z" fill="url(#paint0_linear_906_298)"/>
+                                            <path d="M50 21V29L0 29L3.49691e-07 21L50 21Z" fill="url(#paint1_linear_906_298)"/>
+                                            <defs>
+                                                <linearGradient id="paint0_linear_906_298" x1="-8.59558e-08" y1="11.8029" x2="50.256" y2="45.4419" gradientUnits="userSpaceOnUse">
+                                                    <stop stop-color="#FFA54B"/>
+                                                    <stop offset="1" stop-color="#FF25F8"/>
+                                                </linearGradient>
+                                                <linearGradient id="paint1_linear_906_298" x1="-8.59558e-08" y1="11.8029" x2="50.256" y2="45.4419" gradientUnits="userSpaceOnUse">
+                                                    <stop stop-color="#FFA54B"/>
+                                                    <stop offset="1" stop-color="#FF25F8"/>
+                                                </linearGradient>
+                                            </defs>
+                                        </svg>
+                                    </div>
+                                    <p>Transparent & Tailored Engagement</p>
+                                </div>
+                                <div>
+                                    We prioritize open communication and
+                                    meticulously customize our approaches to
+                                    resonate with your brand's unique vision.
+                                </div>
+                            </div>
+                            <div class="fifth-section__why-columns-column__item">
+                                <div>
+                                    <div>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50" fill="none">
+                                            <path d="M21 0H29V50H21V0Z" fill="url(#paint0_linear_906_298)"/>
+                                            <path d="M50 21V29L0 29L3.49691e-07 21L50 21Z" fill="url(#paint1_linear_906_298)"/>
+                                            <defs>
+                                                <linearGradient id="paint0_linear_906_298" x1="-8.59558e-08" y1="11.8029" x2="50.256" y2="45.4419" gradientUnits="userSpaceOnUse">
+                                                    <stop stop-color="#FFA54B"/>
+                                                    <stop offset="1" stop-color="#FF25F8"/>
+                                                </linearGradient>
+                                                <linearGradient id="paint1_linear_906_298" x1="-8.59558e-08" y1="11.8029" x2="50.256" y2="45.4419" gradientUnits="userSpaceOnUse">
+                                                    <stop stop-color="#FFA54B"/>
+                                                    <stop offset="1" stop-color="#FF25F8"/>
+                                                </linearGradient>
+                                            </defs>
+                                        </svg>
+                                    </div>
+                                    <p>Innovation & Insight</p>
+                                </div>
+                                <div>
+                                    By tapping into prevailing narratives and
+                                    harnessing our extensive global insights, we
+                                    ensure your brand tells a compelling story that
+                                    resonates and remains impactful.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="fifth-section__why-columns__column">
+                            <div class="fifth-section__why-columns-column__item">
+                                <div>
+                                    <div>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50" fill="none">
+                                            <path d="M21 0H29V50H21V0Z" fill="url(#paint0_linear_906_298)"/>
+                                            <path d="M50 21V29L0 29L3.49691e-07 21L50 21Z" fill="url(#paint1_linear_906_298)"/>
+                                            <defs>
+                                                <linearGradient id="paint0_linear_906_298" x1="-8.59558e-08" y1="11.8029" x2="50.256" y2="45.4419" gradientUnits="userSpaceOnUse">
+                                                    <stop stop-color="#FFA54B"/>
+                                                    <stop offset="1" stop-color="#FF25F8"/>
+                                                </linearGradient>
+                                                <linearGradient id="paint1_linear_906_298" x1="-8.59558e-08" y1="11.8029" x2="50.256" y2="45.4419" gradientUnits="userSpaceOnUse">
+                                                    <stop stop-color="#FFA54B"/>
+                                                    <stop offset="1" stop-color="#FF25F8"/>
+                                                </linearGradient>
+                                            </defs>
+                                        </svg>
+                                    </div>
+                                    <p>Sustainability & Strategy</p>
+                                </div>
+                                <div>
+                                    With a dedication to eco-friendly approaches, we
+                                    not only weave unforgettable brand stories but
+                                    also foster sustainable connections, ensuring your
+                                    brand's enduring presence.
+                                </div>
+                            </div>
+                            <div class="fifth-section__why-columns-column__item">
+                                <div>
+                                    <div>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50" fill="none">
+                                            <path d="M21 0H29V50H21V0Z" fill="url(#paint0_linear_906_298)"/>
+                                            <path d="M50 21V29L0 29L3.49691e-07 21L50 21Z" fill="url(#paint1_linear_906_298)"/>
+                                            <defs>
+                                                <linearGradient id="paint0_linear_906_298" x1="-8.59558e-08" y1="11.8029" x2="50.256" y2="45.4419" gradientUnits="userSpaceOnUse">
+                                                    <stop stop-color="#FFA54B"/>
+                                                    <stop offset="1" stop-color="#FF25F8"/>
+                                                </linearGradient>
+                                                <linearGradient id="paint1_linear_906_298" x1="-8.59558e-08" y1="11.8029" x2="50.256" y2="45.4419" gradientUnits="userSpaceOnUse">
+                                                    <stop stop-color="#FFA54B"/>
+                                                    <stop offset="1" stop-color="#FF25F8"/>
+                                                </linearGradient>
+                                            </defs>
+                                        </svg>
+                                    </div>
+                                    <p>Seamless Execution</p>
+                                </div>
+                                <div>
+                                    Confide in us with the nuances of your brand's
+                                    journey, guaranteeing a seamless and impeccable
+                                    experience from concept to completion.
+                                </div>
+                            </div>
+                        </div>
                 </div>
             </section>
             <section class="section sixth-section">

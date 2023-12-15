@@ -1,14 +1,24 @@
 /* Text styles with colors */
 
-.lato160White600 {
+.lato16White600 {
   @extend .lato16_600;
   color: $white;
 }
 
+.lato16Dark600 {
+  @extend .lato16_600;
+  color: $textTitleDark;
+}
 
 .inter100White500 {
   @extend .inter100_500;
   color: $white;
+}
+
+.inter100White400 {
+  @extend .inter100_500;
+  color: $white;
+  font-weight: 400;
 }
 
 .inter100Secondaty500 {
@@ -23,5 +33,34 @@
 
 .inter48White600 {
   @extend .inter48_600;
+  color: $white;
+}
+
+.inter32White400 {
+  @extend .inter32_400;
+  color: $white;
+}
+
+
+.lato48White600  {
+  @extend .lato48_600;
+  color: $white;
+}
+
+.inter120Gradient800 {
+  @extend .inter120_800;
+  background: $primaryGradient;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.lato60White700 {
+  @extend .lato60_700;
+  color: $white;
+}
+
+.lato32White400 {
+  @extend .lato32_400;
   color: $white;
 }

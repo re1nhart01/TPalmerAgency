@@ -8,6 +8,15 @@
 .align-center {
   text-align: center; }
 
+.align-right {
+  text-align: right; }
+
+.align-left {
+  text-align: left; }
+
+.break-line {
+  word-break: break-all; }
+
 /* Typo */
 .lato16_600 {
   font-family: Lato, serif;
@@ -36,3 +45,38 @@
   font-style: normal;
   font-weight: 600;
   line-height: 150%; }
+
+.inter32_400 {
+  font-family: Inter, serif;
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; }
+
+.lato48_600 {
+  font-family: Lato, serif;
+  font-size: 3rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 150%; }
+
+.inter120_800 {
+  font-family: Inter, serif;
+  font-size: 7.5rem;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 100%; }
+
+.lato60_700 {
+  font-family: Lato, serif;
+  font-size: 3.75rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 110%; }
+
+.lato32_400 {
+  font-family: Lato, serif;
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%; }
