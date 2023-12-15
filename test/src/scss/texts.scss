@@ -90,3 +90,15 @@
   @extend .lato24_400;
   color: $white;
 }
+
+
+.lato20Dark500 {
+  @extend .lato20_400;
+  color: $textTitleDark;
+  font-weight: 500;
+}
+
+.lato14Dark600 {
+  @extend .lato14_600;
+  color: $textTitleDark;
+}

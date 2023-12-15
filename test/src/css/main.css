@@ -81,7 +81,7 @@
   font-weight: 400;
   line-height: 120%; }
 
-.lato20_400, .lato20White400, .lato20Dark400 {
+.lato20_400, .lato20White400, .lato20Dark400, .lato20Dark500 {
   font-family: Lato, serif;
   font-size: 1.25rem;
   font-style: normal;
@@ -93,6 +93,13 @@
   font-size: 1.5rem;
   font-style: normal;
   font-weight: 400;
+  line-height: 160%; }
+
+.lato14_600, .lato14Dark600 {
+  font-family: Lato, serif;
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 600;
   line-height: 160%; }
 
 /* Text styles with colors */
@@ -152,6 +159,13 @@
 .lato24White400 {
   color: #fff; }
 
+.lato20Dark500 {
+  color: #2D2D2D;
+  font-weight: 500; }
+
+.lato14Dark600 {
+  color: #2D2D2D; }
+
 .primary-button {
   padding: 12px 28px;
   gap: 10px;
@@ -165,6 +179,17 @@
   gap: 10px;
   border-radius: 70px;
   background-color: #fff; }
+
+.arrow-button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 16px;
+  border-radius: 100px;
+  height: 50px;
+  background-color: #FF2BF1;
+  border: none; }
 
 /* ACCORDION */
 .accordion-list {
@@ -462,16 +487,15 @@
         margin-top: 89px; }
 
 .eighth-section {
-  padding-top: calc(202px + 80px);
   background-color: #232323;
-  padding-left: 5.5vw;
-  padding-right: 5.5vw; }
+  padding: calc(202px + 80px) 5.5vw 200px; }
   .eighth-section .eighth-section__quote {
     width: 100%;
     box-sizing: border-box;
     background-color: #fff;
     padding-left: 6.25%;
-    padding-right: 6.25%; }
+    padding-right: 6.25%;
+    padding-bottom: 146px; }
     .eighth-section .eighth-section__quote .eighth-section__quote-illustrations {
       display: flex;
       flex-direction: row;
@@ -483,3 +507,34 @@
         margin-top: -80px; }
     .eighth-section .eighth-section__quote .eighth-section__quote-icon {
       margin-top: -50px; }
+    .eighth-section .eighth-section__quote .quote-content__inner {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center; }
+      .eighth-section .eighth-section__quote .quote-content__inner > .quote-content-inner__text {
+        max-width: 41.25vw; }
+      .eighth-section .eighth-section__quote .quote-content__inner > .quote-content-inner__author {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center; }
+        .eighth-section .eighth-section__quote .quote-content__inner > .quote-content-inner__author > .quote-controls {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          align-items: center;
+          align-self: flex-start;
+          gap: 66px;
+          margin-top: 24px; }
+
+.ninth-section {
+  background-color: #232323; }
+  .ninth-section .section-heading {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding-left: 7.7%;
+    padding-right: 7.7%;
+    margin-bottom: 92px; }

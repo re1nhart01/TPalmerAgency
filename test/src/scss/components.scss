@@ -287,16 +287,16 @@
 
 
 .eighth-section {
-  padding-top: calc(202px + 80px);
   background-color: $primaryBlack;
-  padding-left: 5.5vw;
-  padding-right: 5.5vw;
+  padding: calc(202px + 80px) 5.5vw 200px;
+
   .eighth-section__quote {
     width: 100%;
     box-sizing: border-box;
     background-color: $white;
     padding-left: 6.25%;
     padding-right: 6.25%;
+    padding-bottom: 146px;
     .eighth-section__quote-illustrations {
       @include flex-row-center;
       & > img {
@@ -308,6 +308,26 @@
     .eighth-section__quote-icon {
       margin-top: -50px;
     }
+    .quote-content__inner {
+        @include flex-row-center;
+      & > .quote-content-inner__text {
+        max-width: 41.25vw;
+      }
+      & > .quote-content-inner__author {
+        @include flex-col-center;
+        & > .quote-controls {
+          @include flex-row-center;
+          @include align_self(flex-start);
+          gap: 66px;
+          margin-top: 24px;
+        }
+      }
+    }
   }
+}
 
+
+.ninth-section {
+  @include section-heading(true);
+  background-color: $primaryBlack;
 }
