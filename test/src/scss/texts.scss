@@ -64,3 +64,29 @@
   @extend .lato32_400;
   color: $white;
 }
+
+.inter32White600 {
+  @extend .inter32_400;
+  color: $white;
+}
+
+.lato20White400 {
+  @extend .lato20_400;
+  color: $white;
+}
+
+.lato20Dark400 {
+  @extend .lato20_400;
+  color: $textTitleDark;
+}
+
+.lato32White700 {
+  @extend .lato32_400;
+  color: $white;
+  font-weight: 700;
+}
+
+.lato24White400 {
+  @extend .lato24_400;
+  color: $white;
+}

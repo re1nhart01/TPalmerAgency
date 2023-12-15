@@ -15,6 +15,13 @@
   align-items: center;
 }
 
+@mixin flex-full-center {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
 @mixin flex-row-center__jc-center {
   display: flex;
   flex-direction: row;

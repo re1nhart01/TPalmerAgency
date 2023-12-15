@@ -46,6 +46,45 @@
   }
 }
 
+/* FLIP CARD */
+.flip-card {
+  width: 30.5vw;
+  background-color: transparent;
+  margin-bottom: 20px;
+  perspective: 1000px;
+  aspect-ratio: 1 / 1;
+  &:hover .flip-card__inner {
+    transform: rotateY(180deg);
+  }
+  .flip-card__inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    .flip-card__front, .flip-card__back {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      -webkit-backface-visibility: hidden;
+      backface-visibility: hidden;
+    }
+   .flip-card__front {
+      background: $primaryGradient;
+    }
+    .flip-card__back {
+      background-color: $white;
+      transform: rotateY(180deg);
+    }
+  }
+
+
+}
+
 
 
 .content {
@@ -56,8 +95,9 @@
   padding-left: 8.3%;
   padding-right: 8.3%;
   position: fixed;
-  width: 90%;
+  width: 100%;
   top: 22px;
+  box-sizing: border-box;
 }
 
 .header__inner {
@@ -67,9 +107,9 @@
 }
 
 .header__links {
-  width: 20%;
   @include flex-row-center;
   gap: 2.7%;
+
   .header-links-burger__button {
     @include flex-col-center;
     width: 40px;
@@ -151,21 +191,117 @@
 }
 
 .fourth-section {
+  @include section-heading(false);
   background-color: $primaryBlack;
   padding-bottom: 55px;
-  @include section-heading(false);
-  .fifth-section__why-columns {
-      @include flex-row-center;
-    .fifth-section__why-columns__column {
-      @include flex-col-center;
-      .fifth-section__why-columns-column__item {
 
+}
+
+.fifth-section {
+  @include section-heading(true);
+  background-color: $primaryBlack;
+  .fifth-section__why-columns {
+    @include flex-col-center;
+    padding-left: 13.2%;
+    padding-right: 9.86%;
+    margin-bottom: 40px;
+    gap: 87px;
+    .fifth-section__why-columns__column {
+      @include flex-row-center;
+      align-items: flex-start;
+      gap: 80px;
+      .fifth-section__why-columns-column__item {
+        @include flex-row-center;
+        max-width: 540px;
+        align-items: flex-start;
+        gap: 26px;
+          & > .why-item__content {
+           @include flex-col-center;
+            align-items: flex-start;
+          }
+        & > svg {
+          width: 50px;
+          height: 50px;
+        }
       }
     }
   }
 }
 
-.fifth-section {
+.sixth-section {
+  @include section-heading(false);
   background-color: $primaryBlack;
+  & > .sixth-section__cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-left: 20px;
+    padding-right: 20px;
+    & .flip-card__front, .flip-card__back {
+      @include flex-full-center;
+      & > p {
+        padding: 50px;
+      }
+    }
+  }
+  padding-bottom: 69px;
+}
+
+
+.seventh-section {
   @include section-heading(true);
+  background-color: $primaryBlack;
+  .seventh-section__women-led {
+    @include flex-row-center;
+    align-items: flex-start;
+    padding-left: 9.735%;
+    padding-right: 8.75%;
+    gap: 80px;
+    .women-led__texts {
+      max-width: 32.6vw;
+      & > p {
+        margin-bottom: 40px;
+      }
+    }
+    .women-led__illustration {
+      @include flex-col-center;
+      .women-led-illustration__img {
+        width: 43.6vw;
+        object-fit: contain;
+      }
+      .women-led-illustration__button {
+        @include align_self(flex-end);
+        margin-top: 89px;
+      }
+    }
+  }
+}
+
+
+.eighth-section {
+  padding-top: calc(202px + 80px);
+  background-color: $primaryBlack;
+  padding-left: 5.5vw;
+  padding-right: 5.5vw;
+  .eighth-section__quote {
+    width: 100%;
+    box-sizing: border-box;
+    background-color: $white;
+    padding-left: 6.25%;
+    padding-right: 6.25%;
+    .eighth-section__quote-illustrations {
+      @include flex-row-center;
+      & > img {
+        width: 13.8vw;
+        object-fit: contain;
+        margin-top: -80px;
+      }
+    }
+    .eighth-section__quote-icon {
+      margin-top: -50px;
+    }
+  }
+
 }
