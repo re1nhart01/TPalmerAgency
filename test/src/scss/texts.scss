@@ -21,7 +21,13 @@
   font-weight: 400;
 }
 
-.inter100Secondaty500 {
+.inter100White300 {
+  @extend .inter100_500;
+  color: $white;
+  font-weight: 300;
+}
+
+.inter100Secondary500 {
   @extend .inter100_500;
   color: $secondary;
 }
@@ -75,6 +81,11 @@
   color: $white;
 }
 
+.lato20Tertiary400 {
+  @extend .lato20_400;
+  color: $tertiaryText;
+}
+
 .lato20Dark400 {
   @extend .lato20_400;
   color: $textTitleDark;
@@ -101,4 +112,27 @@
 .lato14Dark600 {
   @extend .lato14_600;
   color: $textTitleDark;
+}
+
+.lato100White400 {
+  @extend .lato100_400;
+  color: $white;
+}
+
+.lato100White300 {
+  @extend .lato100_400;
+  color: $white;
+  font-weight: 300;
+}
+
+
+.lato100White700 {
+  @extend .lato100_400;
+  color: $white;
+  font-weight: 700;
+}
+
+.roboto16White400 {
+  @extend .roboto16_400;
+  color: $white;
 }

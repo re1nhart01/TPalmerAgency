@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="./src/fonts/Inter/inter.css">
     <link rel="stylesheet" href="./src/fonts/Lato/lato.css">
     <link rel="stylesheet" href="./src/fonts/AmsterdamHandwrite/style.css">
+    <link rel="stylesheet" href="./src/fonts/Roboto/stylesheet.css">
     <link rel="stylesheet" href="./src/css/normalize.css">
     <link rel="stylesheet" href="./src/css/main.css">
 </head>
@@ -22,53 +23,25 @@
     <div class="container">
         <header class="header">
             <div class="header__inner">
-                <div class="header__logo lato16White600">
-                    <img src="./src/assets/svg/logo.svg" alt="">
-                </div>
+                <a href="#" class="header__logo lato16White600">
+                    <img src="./src/assets/svg/logo.svg" alt="HEADER_LOGO_IMG">
+                </a>
                 <div class="header__links">
-                    <a class="normalize-links primary-button" href="">Let's partner up</a>
+                    <a class="normalize-links lato16White600 uppercase-text primary-button" href="#">Let's partner up</a>
                     <div class="header-links__burger">
-                        <div class="header-links-burger__button">
-                            <div class="header-links-burger-button__path"></div>
-                            <div class="header-links-burger-button__path"></div>
-                            <div class="header-links-burger-button__path"></div>
+                        <div class="header-links-burger__button burger-button">
+                            <span class="burger-button__path"></span>
+                            <span class="burger-button__path"></span>
+                            <span class="burger-button__path"></span>
                         </div>
-                        <nav style="display: none">
-                            <a class="normalize-links lato160White600" href="">SERVICES</a>
-                            <a class="normalize-links" href="">YOUR TEAM</a>
-                            <a class="normalize-links" href="">OUR WORK</a>
-                            <a class="normalize-links" href="">BLOG</a>
+                        <nav class="burger-menu__content">
+                            <a class="normalize-links roboto16White400" href="">SERVICES</a>
+                            <a class="normalize-links roboto16White400" href="">YOUR TEAM</a>
+                            <a class="normalize-links roboto16White400" href="">OUR WORK</a>
+                            <a class="normalize-links roboto16White400" href="">BLOG</a>
                         </nav>
                     </div>
-                    <style>
-                        #nav-icon * {
-                            transition: all 0.5s;
-                        }
-                        #nav-icon.open .tfc-header-nav-icon__clip:nth-child(1) {
-                            -webkit-transform: rotate(45deg) translate(3px, 3px);
-                            -moz-transform: rotate(45deg) translate(3px, 3px);
-                            -o-transform: rotate(45deg) translate(3px, 3px);
-                            transform: rotate(45deg) translate(3px, 3px);
-                        }
-                        #nav-icon.open .tfc-header-nav-icon__clip:nth-child(2) {
-                            -webkit-transform: rotate(-45deg) translate(3px, -3px);
-                            -moz-transform: rotate(-45deg) translate(3px, -3px);
-                            -o-transform: rotate(-45deg) translate(3px, -3px);
-                            transform: rotate(-45deg) translate(3px, -3px);
-                        }
-                        .tfc-header__content-burger {
-                            z-index: 97;
-                            background-color: #fff;
-                            transition: 0.5s;
-                        }
-
-                        #nav-icon.open .tfc-header__content-burger {
-                            top: 72px !important;
-                        }
-                    </style>
-                    <script>
-
-                    </script>
+                    <script defer src="src/js/burger-menu-handler.js"></script>
                 </div>
             </div>
         </header>
@@ -80,14 +53,14 @@
                 <div class="first-section__mask">
                     <div class="section__shrink-container">
                         <p class="inter100White500">Experience solutions.</p>
-                        <div class="inter100Secondaty500">
+                        <div class="inter100Secondary500">
                             <span class="amsterdam100Secondary400">Beyond</span> Branding
                         </div>
                     </div>
                 </div>
             </section>
             <section class="section second-section">
-                <h3 class="second-section__heading inter48White600 align-center">We believe that every event is a unique story waiting to be told.</h3>
+                <h3 class="second-section__heading inter48White600 align-center">We believe that every event is a <br> unique story waiting to be told.</h3>
                 <img loading="lazy" class="second-section__illustration" src="./src/assets/png/1.png" alt="IMAGE_WOMAN_1">
             </section>
             <section class="section third-section">
@@ -109,7 +82,7 @@
             <section class="section fourth-section">
                 <div class="section-heading">
                     <h1 class="inter120Gradient800">SERVICES</h1>
-                    <h2 class="inter100White400">We Provide</h2>
+                    <h2 class="fourth-section__heading inter100White400">We Provide</h2>
                 </div>
                 <div class="fourth-section__accordion-list accordion-list">
                     <div class="fourth-section-accordion-list__item accordion-list__item">
@@ -188,7 +161,7 @@
             <section class="section fifth-section">
                 <div class="section-heading">
                     <h1 class="inter120Gradient800">Why</h1>
-                    <h2 class="inter100White400"> T Palmer Agency</h2>
+                    <h2 class="fifth-section__heading inter100White300"> T Palmer Agency</h2>
                 </div>
                 <div class="fifth-section__why-columns">
                         <div class="fifth-section__why-columns__column">
@@ -246,7 +219,7 @@
             <section class="section sixth-section">
                 <div class="section-heading">
                     <h1 class="inter120Gradient800">HOW</h1>
-                    <h2 class="inter100White400">It Works</h2>
+                    <h2 class="lato100White300 sixth-section__heading">It Works</h2>
                 </div>
                 <div class="sixth-section__cards">
                     <div class="sixth-section-cards__item flip-card">
@@ -356,7 +329,7 @@
             <section class="section seventh-section">
                  <div class="section-heading">
                      <h1 class="inter120Gradient800">Women-Led</h1>
-                     <h2 class="inter100White400">Excellence</h2>
+                     <h2 class="lato100White300 seventh-section__heading">Excellence</h2>
                  </div>
                   <div class="seventh-section__women-led women-led">
                      <div class="women-led__texts lato24White400">
@@ -366,7 +339,7 @@
                      </div>
                     <div class="women-led__illustration">
                         <img class="women-led-illustration__img" loading="lazy" src="src/assets/png/womenLed.png" alt="WOMEN_LED_IMAGE">
-                        <button class="women-led-illustration__button lato16White600 uppercase-text primary-button" href="">Learn More</button>
+                        <button class="women-led-illustration__button lato16White600 uppercase-text primary-button" href="#">Learn More</button>
                     </div>
                   </div>
             </section>
@@ -381,73 +354,193 @@
                         <div class="eighth-section__quote-icon">
                             <img src="src/assets/svg/quote.svg" alt="QUOTE_ICON_SVG">
                         </div>
-                    <div class="eighth-section-quote__content quote-content">
-                        <div class="quote-content__inner">
-                            <div class="eighth-section-quote-content__text quote-content-inner__text lato20Dark500">
-                                “T Palmer Agency has been an immense help to the team at Reading Truck. They are an excellent turnkey partner when it comes to logistics, event planning, production, design, and everything else! Their team did an amazing job at our recent event in Indianapolis and we are looking forward to our next program together.”
-                            </div>
-                            <div class="eighth-section-quote-content__author-controls quote-content-inner__author">
-                                <img src="src/assets/svg/quote/quote1.svg" alt="QUOTE_ITEM_1">
-                                <span class="lato14Dark600">Lisa MacGregor, <br>
+                    <div class="quote-item__list-outer">
+                        <div class="quote-item__list">
+                            <div class="quote-content__inner quote-item">
+                                <div class="eighth-section-quote-content__text quote-content-inner__text lato20Dark500">
+                                    “T Palmer Agency has been an immense help to the team at Reading Truck. They are an excellent turnkey partner when it comes to logistics, event planning, production, design, and everything else! Their team did an amazing job at our recent event in Indianapolis and we are looking forward to our next program together.”
+                                </div>
+                                <div class="eighth-section-quote-content__author-controls quote-content-inner__author">
+                                    <img src="src/assets/svg/quote/quote1.svg" alt="QUOTE_ITEM_1">
+                                    <span class="lato14Dark600">Lisa MacGregor, <br>
                                 Director of  Marketing Reading Truck
                             </span>
-                                <div class="quote-content-inner-author__controls quote-controls">
-                                    <button class="arrow-button quote-controls__left">
-                                        <img src="src/assets/svg/arrowLeft.svg" alt="SLIDE_ARROW_LEFT">
-                                    </button>
-                                    <button class="arrow-button quote-controls__right">
-                                        <img src="src/assets/svg/arrowRight.svg" alt="SLIDE_ARROW_RIGHT">
-                                    </button>
+                                    <div class="quote-content-inner-author__controls quote-controls">
+                                        <button class="arrow-button quote-controls__left">
+                                            <img src="src/assets/svg/arrowLeft.svg" alt="SLIDE_ARROW_LEFT">
+                                        </button>
+                                        <button class="arrow-button quote-controls__right">
+                                            <img src="src/assets/svg/arrowRight.svg" alt="SLIDE_ARROW_RIGHT">
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="quote-content__inner quote-item">
+                                <div class="eighth-section-quote-content__text quote-content-inner__text lato20Dark500">
+                                    “T Palmer Agency has been an immense help to the team at Reading Truck. They are an excellent turnkey partner when it comes to logistics, event planning, production, design, and everything else! Their team did an amazing job at our recent event in Indianapolis and we are looking forward to our next program together.”
+                                </div>
+                                <div class="eighth-section-quote-content__author-controls quote-content-inner__author">
+                                    <img src="src/assets/svg/quote/quote1.svg" alt="QUOTE_ITEM_1">
+                                    <span class="lato14Dark600">Lisa MacGregor, <br>
+                                Director of  Marketing Reading Truck
+                            </span>
+                                    <div class="quote-content-inner-author__controls quote-controls">
+                                        <button class="arrow-button quote-controls__left">
+                                            <img src="src/assets/svg/arrowLeft.svg" alt="SLIDE_ARROW_LEFT">
+                                        </button>
+                                        <button class="arrow-button quote-controls__right">
+                                            <img src="src/assets/svg/arrowRight.svg" alt="SLIDE_ARROW_RIGHT">
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="quote-content__inner quote-item">
+                                <div class="eighth-section-quote-content__text quote-content-inner__text lato20Dark500">
+                                    “T Palmer Agency has been an immense help to the team at Reading Truck. They are an excellent turnkey partner when it comes to logistics, event planning, production, design, and everything else! Their team did an amazing job at our recent event in Indianapolis and we are looking forward to our next program together.”
+                                </div>
+                                <div class="eighth-section-quote-content__author-controls quote-content-inner__author">
+                                    <img src="src/assets/svg/quote/quote1.svg" alt="QUOTE_ITEM_1">
+                                    <span class="lato14Dark600">Lisa MacGregor, <br>
+                                Director of  Marketing Reading Truck
+                            </span>
+                                    <div class="quote-content-inner-author__controls quote-controls">
+                                        <button class="arrow-button quote-controls__left">
+                                            <img src="src/assets/svg/arrowLeft.svg" alt="SLIDE_ARROW_LEFT">
+                                        </button>
+                                        <button class="arrow-button quote-controls__right">
+                                            <img src="src/assets/svg/arrowRight.svg" alt="SLIDE_ARROW_RIGHT">
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="quote-content__inner quote-item">
+                                <div class="eighth-section-quote-content__text quote-content-inner__text lato20Dark500">
+                                    “T Palmer Agency has been an immense help to the team at Reading Truck. They are an excellent turnkey partner when it comes to logistics, event planning, production, design, and everything else! Their team did an amazing job at our recent event in Indianapolis and we are looking forward to our next program together.”
+                                </div>
+                                <div class="eighth-section-quote-content__author-controls quote-content-inner__author">
+                                    <img src="src/assets/svg/quote/quote1.svg" alt="QUOTE_ITEM_1">
+                                    <span class="lato14Dark600">Lisa MacGregor, <br>
+                                Director of  Marketing Reading Truck
+                            </span>
+                                    <div class="quote-content-inner-author__controls quote-controls">
+                                        <button class="arrow-button quote-controls__left">
+                                            <img src="src/assets/svg/arrowLeft.svg" alt="SLIDE_ARROW_LEFT">
+                                        </button>
+                                        <button class="arrow-button quote-controls__right">
+                                            <img src="src/assets/svg/arrowRight.svg" alt="SLIDE_ARROW_RIGHT">
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <script src="src/js/slider-handler.js"></script>
+                </div>
+            </section>
+            <section class="section ninth-section">
+                <div class="section-heading">
+                    <h2 class="lato100White300 ninth-section__heading">Latest Blog</h2>
+                </div>
+                <div class="diff-blog__list">
+                    <div class="fade-card-col">
+                        <div class="diff-blog-list__item small-variant fade-card">
+                            <img class="fade-card__img" src="src/assets/png/blog/1.png" alt="BLOG_ITEM_1">
+                            <div class="fade-card-content__gradient">
+                                <div class="fade-card__content">
+                                    <h4 class="lato32White400">Blog Title</h4>
+                                    <p class="lato20Tertiary400">
+                                        Optimizing brand potential through
+                                        external marketing, tailored activations,
+                                        industry networking...
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="diff-blog-list__item fade-card">
+                            <img class="fade-card__img" src="src/assets/png/blog/2.png" alt="BLOG_ITEM_2">
+                            <div class="fade-card-content__gradient">
+                                <div class="fade-card__content">
+                                    <h4 class="lato32White400">Blog Title</h4>
+                                    <p class="lato20Tertiary400">
+                                        Optimizing brand potential through
+                                        external marketing, tailored activations,
+                                        industry networking...
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="fade-card-col">
+                        <div class="diff-blog-list__item fade-card">
+                            <img class="fade-card__img" src="src/assets/png/blog/3.png" alt="BLOG_ITEM_3">
+                            <div class="fade-card-content__gradient">
+                                <div class="fade-card__content">
+                                    <h4 class="lato32White400">Blog Title</h4>
+                                    <p class="lato20Tertiary400">
+                                        Optimizing brand potential through
+                                        external marketing, tailored activations,
+                                        industry networking...
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="diff-blog-list__item small-variant fade-card left-alignment">
+                            <img class="fade-card__img" src="src/assets/png/blog/4.png" alt="BLOG_ITEM_4">
+                            <div class="fade-card-content__gradient">
+                                <div class="fade-card__content">
+                                    <h4 class="lato32White400">Blog Title 4</h4>
+                                    <p class="lato20Tertiary400">
+                                        Optimizing brand potential through
+                                        external marketing, tailored activations,
+                                        industry networking...
+                                    </p>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </section>
-            <section class="section ninth-section">
-                <div class="section-heading">
-                    <h2 class="inter100White400">Latest Blog</h2>
-                </div>
-                <div class="diff-blog__list">
-                    <div class="diff-blog-list__item small-variant">
-                        <img src="src/assets/svg/blog/4.png" alt="BLOG_ITEM_SMALL_1">
-                    </div>
-                    <div class="diff-blog-list__item"></div>
-                    <div class="diff-blog-list__item"></div>
-                    <div class="diff-blog-list__item"></div>
-                </div>
-            </section>
-            <section class="section pre-footer-section">
-                <h1>Let's Partner Up</h1>
-                <div>
-                    <span>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim.
-                    </span>
-                    <button>Contact Us</button>
+                <div class="ninth-section__button">
+                    <button class="primary-button lato16White600 uppercase-text">View All</button>
                 </div>
             </section>
         </main>
+        <aside class="pre-footer-section">
+            <h1 class="lato100White400">Let's <span class="lato100White700">Partner</span> Up</h1>
+            <div class="pre-footer-section__text-content">
+                    <span class="lato32White400">
+                    Lorem ipsum dolor sit amet, consectetur <br> adipiscing elit. Suspendisse varius enim.
+                    </span>
+                <button class="secondary-button lato16Dark600 uppercase-text">Contact Us</button>
+            </div>
+        </aside>
         <footer class="footer">
                 <div class="footer__inner">
                      <div class="footer-inner__left-side">
-                        <img src="">
-                        <button>Let's partner up</button>
+                         <a href="#">
+                             <img src="src/assets/svg/logoGradient.svg" alt="LOGO_GRADIENT_IMG">
+                         </a>
+                        <button class="lato16White600 uppercase-text primary-button">Let's partner up</button>
                      </div>
                      <div class="footer-inner__right-side linker-list">
-                        <div class="linker-list__col">
-                            <a href="">ABOUT</a>
-                            <a href="">YOUR TEAM</a>
-                            <a href="">Blog</a>
+                        <div class="uppercase-text linker-list__col">
+                            <a class="normalize-links roboto16White400" href="#">ABOUT</a>
+                            <a class="normalize-links roboto16White400" href="#">YOUR TEAM</a>
+                            <a class="normalize-links roboto16White400" href="#">Blog</a>
                         </div>
-                        <div class="linker-list__col">
-                           <a href="">ABOUT</a>
-                            <a href="">YOUR TEAM</a>
-                            <a href="">Blog</a>
+                        <div class="uppercase-text linker-list__col">
+                           <a class="normalize-links roboto16White400" href="#">WHAT WE DO</a>
+                            <a class="normalize-links roboto16White400" href="#">Services</a>
+                            <a class="normalize-links roboto16White400" href="#">OUR WORK</a>
+                            <a class="normalize-links roboto16White400" href="#">Testimonials</a>
                         </div>
-                        <div class="linker-list__col">
-                           <a href="">ABOUT</a>
-                            <a href="">YOUR TEAM</a>
-                            <a href="">Blog</a>
+                        <div class="uppercase-text linker-list__col">
+                           <a class="normalize-links roboto16White400" href="#">Social</a>
+                            <a href="#">
+                                <img src="src/assets/svg/instagram.svg" alt="INSTAGRAM_SOCIAL">
+                            </a>
+                            <a href="#">
+                                <img src="src/assets/svg/linkedin.svg" alt="LINKEDIN_SOCIAL">
+                            </a>
                         </div>
                      </div>
                 </div>

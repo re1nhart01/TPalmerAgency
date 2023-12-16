@@ -1,16 +1,12 @@
-
-
-
-
-
-const element = document.querySelector("#nav-icon");
-element.addEventListener("click", () => {
-    element.classList.toggle("open");
-    const contentBlock = document.querySelector(".tfc-header__content-burger");
-    const isOpened = element.classList.contains("open");
-    if (isOpened) {
-        contentBlock.style.setProperty("top", "72px", "important");
-    } else {
-        contentBlock.style.setProperty("top", "-100vh", "important");
-    }
-})
+document.addEventListener('DOMContentLoaded', function() {
+    const button = document.querySelector(".burger-button")
+    const burgerContent = document.querySelector(".burger-menu__content");
+    button.addEventListener('click', function() {
+        button.classList.toggle('open');
+        if (button.classList.contains("open")) {
+            burgerContent.style.height = '40px';
+        } else {
+            burgerContent.style.height = '0px';
+        }
+    });
+});
